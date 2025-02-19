@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>rooms</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Container styling */
+#container {
+  
+  width: 100%;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+
+}
+   #msection {
+    width: 100%;
+    background-color: #f8f9fa;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-image: url('./image/head.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+}
+
+#hstart span {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    gap: 15px;
+}
+
+nav a, #hend a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    padding: 5px 10px;
+    transition: 0.3s;
+}
+
+nav a:hover, #hend a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+#msection2 {
+    height: 20%;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+    background-image: url('./image/iStock-1353068108.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#perfect {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color:white;
+    margin-top: 150px;
+    text-align: left;
+    margin-left: 150px;
+}
+
+#perfect2 p {
+    font-size: 16px;
+    color: white;
+    max-width: 600px;
+    margin-top: 30px;
+    margin-left: 140px;
+    line-height: 1.6;
+    text-align: left;
+}
+
+#inside {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+#inside h5 {
+    font-size: 20px;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+#inside p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+.rooms-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr)); 
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+}
+
+/* Individual room box */
+.rooms-container div {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Room images */
+.rooms-container img {
+    width: 100%;
+    height: 200px; /* Fixed height for consistency */
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* Room titles */
+.rooms-container h3 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+/* Room descriptions */
+.rooms-container p {
+    font-size: 16px;
+    color: #555;
+}
+#last_img {
+            background: url('./image/gallery-6.jpg') no-repeat center center/cover;
+            width: 100%;
+            height: 500px;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+        
+        #last_img1 {
+            background:none
+            /*padding:20px;
+            border-radius: 10px;
+            */
+        }
+        
+        #last_img1 h5 {
+            font-size: 24px;
+            margin: 10px 0;
+            color: white;
+            font-weight: bold;
+        }
+        
+        p {
+            font-size: 18px;
+            margin: 5px 0;
+        }
+
+        footer {    height: 400px;
+            background: white;
+            color: black;
+            padding: 30px 20px;
+        }
+
+        .footer-section {
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .footer-section div {
+            flex: 1;
+            min-width: 200px;
+            margin: 10px;
+        }
+
+        .footer-section h3 {
+            color: black;
+            font-weight: bold;
+            font-size: 30px;
+        }
+
+        .footer-sectionp {
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    #hend {
+        margin-top: 10px;
+    }
+
+    #perfect {
+        font-size: 20px;
+    }
+    
+    #perfect2 p, #inside p {
+        font-size: 14px;
+    }
+    
+    #inside {
+        padding: 15px;
+    }
+    #msection2 div {
+        grid-template-columns: 1fr;
+    }
+    .rooms-container {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+    #last_img {
+                height: 300px;
+            }
+            
+           #last_img h5 {
+                font-size: 20px;
+            }
+            
+            #last_img p {
+                font-size: 16px;
+            }
+            .review-container {
+                flex-direction: column;
+                align-items: center;
+            }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 10px;
+    }
+    
+    #hstart span {
+        font-size: 1.2rem;
+    }
+    
+    nav a, #hend a {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+
+    #perfect {
+        font-size: 18px;
+        text-align: center;
+    }
+    
+    #perfect2 p, #inside p {
+        font-size: 12px;
+        text-align: center;
+    }
+    
+    #inside {
+        padding: 10px;
+    }
+    .rooms-container {
+        grid-template-columns: 1fr; 
+    }
+}
+</style>
+</head>
+<body>
+       <section id="msection">
+    <header id="header1">
+      <div id="hstart"> 
+          <span>Travel & Tourism</span>
+     </div>
+    <div>
+     <nav id="hcenter">
+       <a href="../UI_final_project/index.html">Home</a>
+       <a href="../UI_final_project/Rooms_n.html">ROOMS</a>
+       <a href="../UI_final_project/ContactPage.html">CONTACTS</a>
+    
+       </nav>
+     </div>  
+     <div id="hend">
+       <a href="##">REGRVATION</a>
+     </div>
+    </header> 
+   </section>  
+   
+   <section id="msection2">
+            <div id="perfect">Rooms & Accommodation</div>
+              <div id="perfect2">
+                <p>
+               If you are looking for a home away from home, just walk in here. You can get both, 
+               an incredible and relaxing experience while you are on a holiday.
+                Take a closer look into the rooms we offer and pick the one for you.
+                 </p>
+              </div>
+   </section>
+     <section id="msection3">
+          <div id="inside">
+           <h5>Come & Stay With Us</h5>
+           <p>Pick any of our hotel rooms to experience the delightful decor, 
+              complemented<br> with modern amenities for a comfortable stay.</p>
+          </div>
+     </section>
+     <section class="rooms-container">   
+          <div >
+            <img src="./image/room-1.jpg" alt="Not found">
+            <h3>Double Deluxe Room</h3>
+            <p>Our double deluxe rooms are 
+               complemented with modern<br> 
+               and luxurious amenities for a wonderful stay.</p>
+          </div>
+          <div>
+            <img src="./image/room-2.jpg" alt="Not found">
+            <h3>Double Deluxe Room</h3>
+            <p>We offer 15 club rooms designed with a vibrant touch to enhance <br>
+               your spirits for a happening holiday.</p>
+          </div>
+          <div>
+            <img src="./image/room-3-1.jpg" alt="Not found">
+            <h3>Double Deluxe Room</h3>
+            <p>If you are looking for a room that gives you both space and luxury at<br>
+                  a reasonable price, this is the one for you.</p>
+          </div>
+          <div>
+            <img src="./image/room-4-1.jpg" alt="Not found">
+            <h3>Double Deluxe Room</h3>
+            <p>Experience luxury in style in our executive suites. These rooms also<br>
+               give you a beautiful view of the city.</p>
+          </div>
+          <div>
+            <img src="./image/room-5.jpg" alt="Not found">
+            <h3>Double Deluxe Room</h3>
+            <p>This is the second-highest ranked room in our
+               hotel that offers luxury with the most advanced amenities.</p>
+          </div>
+          <div>
+            <img src="./image/room-6.jpg" alt="Not found">
+            <h3>Double Deluxe Room</h3>
+            <p>Wish to live like a king? Here’s the top presidential suite where you<br>
+               can spend the best days of your life.Read More</p>
+          </div>
+         
+    </section>
+     <section id="last_img">
+       <div id="last_img1">
+        <h5>Plan an Unforgettable Experience in Mykonos Today!</h5><br>
+        <p>We can help you fit your stay and experience within your allotted budget.</p><br>
+        <p>Book Your Stay Now</p><br>
+        <p>+1-123 456 7890</p>
+       </div>
+      </section>
+
+      <footer>
+        <section class="footer-section">
+        <div>
+            <h3>Travel & Tourism</h3>
+            <p>Gravida maecenas mi iaculis non,<br> posuere mattis urna, ac risus sit<br> porta nunc nibh dictum proin leo <br>dolor sed bibendum mi.</p>
+        </div>
+        <div>
+            <h3>Hotel</h3>
+            <p>About Us<br>Reviews<br>Get Directions<br>Nearby Visits<br>Contact Us</p>
+        </div>
+        <div>
+            <h3>Customer Help</h3>
+            <p>Guest Support<br>Guest Feedback<br>FAQs<br>Offers<br>Location</p>
+        </div> 
+        <div>
+            <h3>Contact</h3>
+            <p>Travel & Tourism,<br> 2855 Nelsonville Rd, Boston, Massachusetts (MA), 40107</p>
+        </div>
+    </section>
+     </footer>
+</body>
+</html>

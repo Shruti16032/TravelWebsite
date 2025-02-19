@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<style>
+
+  *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+    #container {
+                   width: 100%;                                 
+                    height: auto;
+                     color: white;
+                      display: flex;
+                     flex-wrap: wrap;
+                    position: relative;
+                     flex-direction: column;
+              
+             }
+    #header1{
+            display: flex;
+            color: white;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+             width: 100%;
+            /* padding: 10px 0;*/
+            align-items: center;
+           
+            }
+    #hstart{
+            position: absolute;
+            color: white;
+           font-size: 32px;
+           font-weight: bold;
+           text-align: left;
+            top: 30px;
+            left: 150px;
+            
+            /*font-size: 24px;
+           text-align: center;
+           position: relative;
+           top: 0;
+           left: 0;
+            margin-bottom: 10px;*/
+      }
+    #hcenter{
+          height: 30px;
+          width: 40%;
+          font-size: 25px;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-evenly;
+          position: absolute;
+          text-decoration: none;
+          top:30px;
+          right: 30%;
+         
+    }
+    a:visited {
+    color: white;  
+    }
+
+    #hend{
+           height: 30px;
+           width: 10%;
+           color: white;
+           font-size: 20px;
+           position: absolute;
+           display:flex;
+           flex-wrap: wrap;
+          justify-content:space-evenly;
+          top: 30px;
+          right: 30px;
+      /*
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          margin-top: 10px;
+       */   
+}
+        
+    #msection{
+          height:700px;
+          width: 100%;
+          background-image: url('./image/bg_1.jpg');
+          background-size:cover;
+          background-repeat: no-repeat;
+          background-position: center;
+          padding: 50px 20px;
+          text-align: left;
+         
+    }
+      main{
+        height: 100%;
+        width: 100%;
+        display:grid;
+        align-items: center;
+ 
+    }
+    #perfect{
+       position: absolute;
+       color: white;
+       font-size: 50px;
+       margin: 0 auto;
+       font-weight: bold;
+       text-align: left;
+       top: 200px;
+        left: 150px;
+    }
+    #perfect2{
+      position: absolute;
+       color: white;
+       font-size: 20px;
+       margin: 0 auto;
+       font-weight: bold;
+       top: 350px;
+        left: 150px;
+    }
+     #perfect3{
+      position: absolute;
+      top: 450px;
+        left: 150px;
+     }  
+     #perfect3 button {
+    font-size: 20px; 
+    padding: 12px 24px; 
+    background-color:white; 
+    color:black;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+     }
+     img {
+          max-width: 100%;
+          height: auto;
+       }
+    #msection2{
+      height:800px;
+      width: 100%;
+      padding: 50px 20px;
+      text-align: center;
+      position: relative;
+
+    }
+    #img1{
+          height: 800px;
+          width: 500px;
+          position: relative;
+          left: 140px;
+          top:70px;
+    }
+    #text1{
+      position: absolute;
+       color: black;
+       text-align: left;
+       font-size: 19px;
+       bottom:150px;
+       left:160px;
+
+      
+    }
+    #text2{
+      position: absolute;
+       color: black;
+       font-size: 45px;
+      font-weight: bold;
+      text-align: left;
+       top: 120px;
+       right:580px;
+
+    }
+    #text3{
+      position: absolute;
+       color: black;
+       font-size: 19px;
+       text-align: left;
+       top: 250px;
+       right:250px;
+    }
+    #button2{
+         height: 50px;
+         width: 150px;
+         color: white;
+         background: #000;
+         position: absolute;
+         text-align:center;
+         bottom:80px;
+         left: 150px;
+         cursor: pointer;
+        transition: background 0.3s ease;
+    }
+    #img2{
+      height: 300px;
+      width: 400px;
+      position:absolute;
+      bottom: 150px;
+      right:360px;
+      
+      
+    }
+    #msection3{
+      height: 100%;
+      width: auto;
+      padding: 50px 20px;
+      position: relative;
+      display: flex;
+      justify-content:space-between;
+      flex-wrap: wrap;
+
+    }
+    #txt1{
+      position: absolute;
+       color: black;
+       font-weight: bold;
+       text-align: left;
+       font-size: 45px;
+       top:70px;
+       left:150px;
+    }
+    #txt2{
+      position: absolute;
+       color: black;
+      text-align: left;
+      font-weight: bold;
+       font-size: 17px;
+       top:150px;
+       left:150px;
+    }
+    .spa1{
+       height: 300px;
+       width: 350px;
+       position: absolute;
+       top:200px;
+       left:150px;
+
+
+    }
+    .spa2{
+      height: 300px;
+       width: 350px;
+       position: absolute;
+       top:200px;
+       right:580px;
+    }
+    .spa3{
+      height: 300px;
+       width: 350px;
+       position: absolute;
+       top:200px;
+       right: 150px;
+
+    }
+    h5{
+      color: black;
+       font-weight: bold;
+       text-align: left;
+       font-size: 25px;
+    }
+    #m4section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 700px; /* Added space to prevent overlap */
+    padding: 50px 20px;
+  }
+  #inside,#inside2 {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 30px;
+    font-size: 40px;
+    font-weight: bold;
+
+  }
+  #inside p{
+    text-align: center;
+    width: 100%;
+    margin-bottom: 28px;
+    font-size: 17px;
+    font-weight:normal;
+  }
+  .gallery-container {
+    display: grid;
+    grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    width: 80%;
+  }
+  .gallery-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  #msection5 {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #fff;
+        }
+
+        #inside2 h3 {
+            font-size: 28px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        #inside2 p {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        .review-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .review {
+            background: white;
+            padding: 20px;
+            max-width: 300px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+
+        .stars {
+            color: #f4b400; /* Gold color */
+            font-size: 18px;
+        }
+
+        blockquote {
+            font-size: 14px;
+            color: #444;
+            margin: 10px 0;
+            line-height: 1.5;
+        }
+
+        h6 {
+            margin-top: 10px;
+            font-size: 20px;
+            font-weight: bold;
+            color: white;
+        }
+        #last_img {
+            background: url('./image/gallery-6.jpg') no-repeat center center/cover;
+            width: 100%;
+            height: 500px;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+        
+        #last_img1 {
+            background:none
+            /*padding:20px;
+            border-radius: 10px;
+            */
+        }
+        
+        h5 {
+            font-size: 24px;
+            margin: 10px 0;
+            color: white;
+            font-weight: bold;
+        }
+        
+        p {
+            font-size: 18px;
+            margin: 5px 0;
+        }
+     /*fotter*/
+        footer {
+            background:white;
+            color: black;
+            padding: 30px 20px;
+        }
+
+        .footer-section {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .footer-section div {
+            flex: 1;
+            min-width: 200px;
+            margin: 10px;
+        }
+
+        .footer-section h3 {
+            color: black;
+        }
+
+        .footer-section p {
+            font-size: 14px;
+            line-height: 1.5;
+        }
+  @media (max-width: 768px) {
+    header {
+      flex-direction: column;
+      text-align: center;
+    }
+    #hcenter {
+      flex-direction: column;
+      gap: 10px;
+    }
+    #perfect {
+      font-size: 30px;
+    }
+    #msection2 {
+        flex-direction: column;
+    }
+    
+    #text1, #text3 {
+        max-width: 90%;
+    }
+    #last_img {
+                height: 300px;
+            }
+            
+           #last_img h5 {
+                font-size: 20px;
+            }
+            
+            #last_img p {
+                font-size: 16px;
+            }
+            .review-container {
+                flex-direction: column;
+                align-items: center;
+            }
+      .footer-section {
+                flex-direction: column;
+                text-align: center;
+            }        
+  }
+  @media (max-width: 480px) {
+            #last_img {
+                height: 250px;
+            }
+            
+           #last_img h5 {
+                font-size: 18px;
+            }
+            
+           #last_img p {
+                font-size: 14px;
+            }
+            #perfect {
+        font-size: 24px;
+    }
+    
+    #perfect2 p, #text1, #text3 {
+        font-size: 16px;
+    }
+    
+    #text2 p {
+        font-size: 22px;
+    }
+    
+    #perfect3 button, #button2 {
+        padding: 10px 20px;
+        font-size: 14px;
+    }   
+        }
+   
+  
+</style>
+</head>
+  <body>
+    <section id="container">
+      <header id="header1">
+        <div id="hstart"> 
+            <span >Travel & Tourism</span>
+        </div>
+        <nav id="hcenter">
+           <a href="./Travel&Tourism.html">Home</a>
+           <a href="../UI_final_project/Rooms_n.html">ROOMS</a>
+           <a href="../UI_final_project/ContactPage.html">CONTACTS</a>
+        </nav>
+        <div id="hend">
+            <a href="##">REGRVATION</a>
+        </div>
+      </header> 
+    </section>  
+    <main>
+      <section id="msection">
+            <div id="perfect">The Perfect Hotel in<br> Mykonos</div><br><br>
+              <div id="perfect2">
+                <p>The Perfect Hotel in Mykonos If you are looking for a perfect holiday experience <br>
+                  with memories tocherish you are at the right place.Let’s plan a reasonable stay for you.</p>
+              </div><br>
+            <div id="perfect3">
+                <button>Book Your Stay</button>
+            </div>
+          </section>
+          <section id="msection2">
+            <div id="img1">
+              <img src="./image/img1.jpg" alt="not found">
+            </div>
+            <div id="text1">
+              <p>Surrounded by scenic beauty and attractive tourist attractions we<br> make it
+                 convenient for you to visit all the beautiful places with our<br> inhouse guide.
+                  We can also help you arrange transport facilities for <br>an easier commute to nearby places.</p>
+            </div>
+            <div> 
+              <button id="button2">Know More</button>
+            </div>
+            <div id="text2">
+              <p>Experience the Life of<br>Mykonos City</p>
+            </div>
+            <div id="text3">
+              <p>We will help you experience Mykonos life in its true sense.<br> From living
+                among the residents to eating authentic delicacies<br> you are sure to
+                walk home with memories and wonderful moments.</p>
+            </div>
+            <div id="img2">
+              <img src="./image/img2.jpg" alt="not found">
+            </div>
+
+          </section>
+        <section id="msection3">
+            <div id="txt1">
+              <p>Amenities & Facilities</p>
+            </div>
+            <div id="txt2">
+              <p>If you are looking for a relaxing, refreshing and rejuvenating experience<br> altogether,
+                 we offer all of that under one roof.</p>
+                
+            </div>
+            <div class="spa1"> 
+              <img src="./image/img3.jpg" alt="Not found"><br>
+              <h5>An Infinite-edge Pool</h5><br>
+              <p>Experience the joy of swimming in our infinity-edge
+                 pool that gives you a nice picturesque view.</p>
+                 <button>Read more</button>   
+              </div>
+            <div class="spa2">
+              <img src="./image/img4.jpg" alt="Not found"><br>
+              <h5>An Iconic Spa</h5><br>
+              <p>Set forth on an exquisite wellness journey to refresh,
+                 re-energize and rejuvenate at our iconic spa.</p>
+                <button>Read more</button>    
+            </div>
+            <div class=spa3> 
+              <img src="./image/img5.jpg" alt="Not found"><br>
+              <h5>In-house Restaurants</h5><br>
+              <p>We have three in-house restaurants offering different cuisines
+                 that you can choose from.</p>
+              <button>Read more</button> 
+            </div>
+          </section>
+        <section id="m4section">
+          <div id="inside">
+            <h3>Our Inside Pictures</h3><br>
+           <p> Take a look at some pretty pictures captured in and around our premises.</p>
+          </div> 
+          <div class="gallery-container">
+            <img src="./image/gallery-1.jpg" alt="Gallery Image 1">
+            <img src="./image/gallery-2.jpg" alt="Gallery Image 2">
+            <img src="./image/gallery-3.jpg" alt="Gallery Image 3">
+            <img src="./image/gallery-4.jpg" alt="Gallery Image 4">
+            <img src="./image/gallery-5.jpg" alt="Gallery Image 5">
+            <img src="./image/gallery-6.jpg" alt="Gallery Image 6">
+          </div>
+        </section>
+        <section id="msection5">
+          <div id="inside2">
+              <h3>What Our Guests Say</h3>
+              <p>We take pride in serving our guests with the best experience. Read what they say.</p>
+          </div>
+      
+          <div class="review-container">
+              <div class="review">
+                  <p class="stars">★★★★★ 4.5/5</p>
+                  <blockquote>"The hospitality was amazing! The rooms were clean, and the staff was very friendly. Highly recommended!"</blockquote>
+                  <h6>Emily Hunt</h6>
+              </div>
+              
+              <div class="review">
+                  <p class="stars">★★★★★ 4.8/5</p>
+                  <blockquote>"A wonderful experience! The food was delicious, and the ambiance was so relaxing. Will visit again!"</blockquote>
+                  <h6>James Carter</h6>
+              </div>
+      
+              <div class="review">
+                  <p class="stars">★★★★★ 5.0/5</p>
+                  <blockquote>"Best vacation ever! The location was stunning, and the customer service was top-notch."</blockquote>
+                  <h6>Linda Brown</h6>
+              </div>
+      
+              <div class="review">
+                  <p class="stars">★★★★★ 4.7/5</p>
+                  <blockquote>"Absolutely loved it! The spa and pool were fantastic. Great value for the price!"</blockquote>
+                  <h6>Michael Scott</h6>
+              </div>
+          </div>
+      </section>
+      <section id="last_img">
+       <div id="last_img1">
+        <h5>Plan an Unforgettable Experience in Mykonos Today!</h5><br>
+        <p>We can help you fit your stay and experience within your allotted budget.</p><br>
+        <p>Book Your Stay Now</p><br>
+        <p>+1-123 456 7890</p>
+       </div>
+      </section>
+        </main>
+    <footer>
+      <section>
+        <footer>
+          <section class="footer-section">
+              <div>
+                  <h3>Travel & Tourism</h3>
+                  <p>Gravida maecenas mi iaculis non,<br> posuere mattis urna, ac risus sit<br> porta nunc nibh dictum proin leo <br>dolor sed bibendum mi.</p>
+              </div>
+              <div>
+                  <h3>Hotel</h3>
+                  <p>About Us<br>Reviews<br>Get Directions<br>Nearby Visits<br>Contact Us</p>
+              </div>
+              <div>
+                  <h3>Customer Help</h3>
+                  <p>Guest Support<br>Guest Feedback<br>FAQs<br>Offers<br>Location</p>
+              </div> 
+              <div>
+                  <h3>Contact</h3>
+                  <p>Travel & Tourism,<br> 2855 Nelsonville Rd, Boston, Massachusetts (MA), 40107</p>
+              </div>
+          </section>
+      </footer>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
+   </body>
+</html>

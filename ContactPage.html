@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ContactUs</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Container styling */
+#container {
+  
+  width: 100%; 
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+/* Header Styling */
+#header1 {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-image: url('./image/head.jpg');
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  align-items: center;
+  color: white;
+  padding: 10px 20px;
+  position: relative;
+  
+}
+
+/* Styling for hstart */
+#hstart span {
+  font-size: 28px;
+  font-weight: bold;
+  position: absolute;
+  left: 150px;
+  top:30px
+}
+
+/* Navigation styling */
+#hcenter {
+  display: flex;
+  gap: 20px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#hcenter a {
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+  padding: 10px;
+  transition: background-color 0.3s ease;
+}
+
+#hcenter a:hover {
+  background-color: none;
+}
+
+/* Styling for hend (reservation button) */
+#hend a {
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+  background-color: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+#hend a:hover {
+  background-color: blue;
+}
+#msection{
+  height: 500px;
+  width: 100%;
+  background: url('./image/iStock-1353068108.webp') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+    display: flex;
+    flex-direction:column;
+    justify-content:space-around;
+    align-items: left;
+    position: relative;
+    padding: 50px 20px;
+    
+}
+#perfect {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    text-align:left;
+    position: absolute;
+    bottom: 250px;
+    left: 160px;
+    
+}
+
+/* Text description */
+#perfect2 {
+    max-width: 600px;
+    font-size: 30px;
+    background: none;
+    padding: 15px;
+    border-radius: 10px;
+    position: absolute;
+    text-align: left;
+    bottom:150px;
+    left: 140px;
+}
+ .contact {
+  height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+      padding: 20px;
+}
+
+.info-box {
+    width: 45%;
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.info-box h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+.info-box p{
+  font-size: 1em;
+  color:black;
+}
+
+
+
+/* Form styles */
+.form-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 15px;
+}
+
+.form-container input, .form-container button {
+    width: 48%;
+    padding: 10px;
+    margin: 5px 0;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.form-container button {
+  width: 20%;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+.form-container button:hover {
+    background-color: #287b2c;
+}
+/*footer*/
+footer {    height: 400px;
+            background: white;
+            color: black;
+            padding: 30px 20px;
+        }
+
+        .footer-section {
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .footer-section div {
+            flex: 1;
+            min-width: 200px;
+            margin: 10px;
+        }
+
+        h3 {
+            color: black;
+            font-weight: bold;
+            font-size: 30px;
+        }
+
+        p {
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+/* Media Queries for responsiveness */
+@media screen and (max-width: 768px) {
+  #header1 {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  #hcenter {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+
+  #hcenter a {
+    width: 100%;
+    text-align: center;
+  }
+
+  #hend a {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+  }
+  #perfect {
+        font-size: 2em;
+    }
+
+    #perfect2 {
+        font-size: 1em;
+        padding: 10px;
+    }
+
+    .footer-section {
+                flex-direction: column;
+                text-align: center;
+            }
+}
+
+@media screen and (max-width: 480px) {
+  #hstart span {
+    font-size: 20px;
+  }
+
+  #hcenter a {
+    font-size: 16px;
+  }
+
+  #hend a {
+    font-size: 16px;
+  }
+  #perfect {
+        font-size: 1.8em;
+    }
+
+    #perfect2 {
+        font-size: 0.9em;
+        padding: 8px;
+    }
+}
+</style>
+</head>
+<body>
+<header id="header1">
+    <div id="hstart"> 
+     <span>Travel & Tourism</span>
+     </div>
+     <nav id="hcenter">
+       <a href="../UI_final_project/index.html">Home</a>
+       <a href="../UI_final_project/Rooms_n.html">ROOMS</a>
+       <a href="../UI_final_project/ContactPage.html">CONTACTS</a>
+     </nav>
+     <div id="hend">
+       <a href="##">REGRVATION</a>
+     </div>
+    </header> 
+   </section>  
+   <section id="msection">
+            <div id="perfect">Contact Us</div><br><br>
+              <div id="perfect2">
+                <p>
+               Do you want to enquire about our pricing, 
+                current offers and arrangements we can help you with?
+                 Give us a call or send in your concerns through the form below.
+                 </p>
+              </div><br>
+   </section>
+   <section class="contact">
+        <div class="info-box">
+           <h2>Reception Office</h2>
+           <p>2855 Nelsonville Rd, Boston, Massachusetts (MA), 40107</p>
+        </div>
+        <div class="info-box">
+           <h2>Reception Hours</h2>
+           <p>7:30 AM - 11:00 PM</p>
+        </div>
+        <div class="info-box">
+           <h2>Contact</h2>
+           <p>+1-123 456 7890<br>
+              contact@info.com</p>
+        </div>
+        <div class="info-box">
+           <h2>Follow Us</h2>
+           
+        </div>
+       <form class="form-container">
+        <input type="text" placeholder="Name" required>
+        <input type="email" placeholder="Email" required >
+        <input type="text" placeholder="Subject" required>
+        <input type="text" placeholder="Message" required>
+        <button>Submit</button>
+       </form>
+   </section>
+   <footer>
+    <section class="footer-section">
+        <div>
+            <h3>Travel & Tourism</h3>
+            <p>Gravida maecenas mi iaculis non,<br> posuere mattis urna, ac risus sit<br> porta nunc nibh dictum proin leo <br>dolor sed bibendum mi.</p>
+        </div>
+        <div>
+            <h3>Hotel</h3>
+            <p>About Us<br>Reviews<br>Get Directions<br>Nearby Visits<br>Contact Us</p>
+        </div>
+        <div>
+            <h3>Customer Help</h3>
+            <p>Guest Support<br>Guest Feedback<br>FAQs<br>Offers<br>Location</p>
+        </div> 
+        <div>
+            <h3>Contact</h3>
+            <p>Travel & Tourism,<br> 2855 Nelsonville Rd, Boston, Massachusetts (MA), 40107</p>
+        </div>
+    </section>
+</footer>
+</body>
+    
+</html>
